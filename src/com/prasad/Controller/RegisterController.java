@@ -11,6 +11,9 @@ import com.prasad.Service.RegisterService;
 @Controller
 public class RegisterController {
 
+	System.out.println("i am from controller");	
+
+	
 	@Autowired
 	RegisterService registerService;
 	
@@ -28,7 +31,6 @@ public class RegisterController {
 		mv.addObject("message","Registration is done for the following details :");
 		mv.addObject("register", register);
 		return mv;
-		
 	}
 	
 }
